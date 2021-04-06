@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/a2e7644204.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/lib/styles.css" />
+
+    <link rel="stylesheet" href="lib/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <button class="hamburger-btn"><i class="fa fa-bars"></i></button>
+      <span>logo</span>
+      <nav class="nav">
+        <ul class="nav__list nav__list--primary">
+          <li class="nav-item">
+            <a class="nav__link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav__link nav__link--active" href="docs.html">Docs</a>
+          </li>
+          <li class="nav-item"><a class="nav__link">Git hub</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="grid-col-2-spilt">
+        <div class="flex flex-col flex-start pt-1">
+          <div>
+            <ul class="nav__list flex-col m-1">
+              <h2>Components</h2>
+              <li class="list__item mt-1"><a href="">Getting started</a></li>
+              <li class="lsit_item mt-1"><a href="#avatar">Avatar</a></li>
+              <li class="lsit_item mt-1"><a href="#alerts">Alert</a></li>
+              <li class="lsit_item mt-1"><a href="#button">Button</a></li>
+              <li class="lsit_item mt-1"><a href="#card">Card</a></li>
+              <li class="lsit_item mt-1"><a href="#rating">Rating</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-col main">
+          <div id="avatar" class="flex flex-col">
+            <div class="flex">
+              <span class="avatar m-1">
+                <img
+                  src="https://images.unsplash.com/photo-1614644147762-f619a7eab052?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218fHx8fHx8fHwxNjE3MzYyMTI0&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"
+                  alt="avatar"
+                />
+              </span>
+              <span class="avatar m-1 bg-primary">A J </span>
+            </div>
+          </div>
+          <div id="alert" class="flex flex-col">
+            <div class="flex">
+              <div class="toast toast--info">
+                <button class="btn-close btn-lg">
+                  <i class="fa fa-times"></i>
+                </button>
+                <div>
+                  <div class="toast__title">
+                    <i
+                      class="fa fa-exclamation-triangle icon--success"
+                      aria-hidden="true"
+                    ></i>
+
+                    Information
+                  </div>
+                  <div class="toast__text">this is a Informatin alert</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex">
+              <div class="toast toast--success">
+                <button class="btn-close btn-lg">
+                  <i class="fa fa-times"></i>
+                </button>
+                <div>
+                  <div class="toast__title">
+                    <i
+                      class="fa fa-check-circle icon--success"
+                      aria-hidden="true"
+                    ></i>
+                    Success
+                  </div>
+                  <div class="toast__text">this is a success alert</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex">
+              <div class="toast toast--error">
+                <button class="btn-close btn-lg">
+                  <i class="fa fa-times"></i>
+                </button>
+                <div>
+                  <div class="toast__title">
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+
+                    Error
+                  </div>
+                  <div class="toast__text">this is a Error alert</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex">
+              <div class="toast toast--warning">
+                <button class="btn-close btn-lg">
+                  <i class="fa fa-times"></i>
+                </button>
+                <div>
+                  <div class="toast__title">
+                    <i
+                      class="fa fa-exclamation-triangle icon--success"
+                      aria-hidden="true"
+                    ></i>
+
+                    Warning
+                  </div>
+                  <div class="toast__text">this is a Warning alert</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="button" class="flex flex-col">
+            <h1>Button</h1>
+            <h3>Sizes</h3>
+            <div class="m-1">
+              <button class="btn bg-primary btn-lg">Primary</button>
+              <button class="btn bg-primary">Primary</button>
+              <button class="btn bg-primary btn-sm">Primary</button>
+            </div>
+
+            <h3>Variants</h3>
+            <div class="m-1">
+              <button class="btn btn--success">Success</button>
+              <button class="btn btn--warning">Warning</button>
+              <button class="btn btn--error">Error</button>
+              <button class="btn">Secondary</button>
+            </div>
+
+            <h3>Rounded</h3>
+            <div class="m-1">
+              <button class="btn btn--success btn--rounded">Success</button>
+
+              <button class="btn btn--rounded">Secondary</button>
+            </div>
+
+            <h3>Button with Icon</h3>
+            <div class="m-1">
+              <button class="btn btn--success btn--rounded">
+                Home <i class="fa fa-home" aria-hidden="true"></i>
+              </button>
+
+              <button class="btn btn--rounded">
+                Wishlist <i class="fa fa-heart-o" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <h3>Icon Button</h3>
+            <div class="m-1">
+              <button class="btn btn--success btn--icon">
+                <i class="fa fa-home" aria-hidden="true"></i>
+              </button>
+
+              <button class="btn btn--icon icon--transparent">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <h3>Icon Button with badge</h3>
+            <div class="m-1">
+              <button class="btn btn--success btn--icon icon--transparent">
+                <span
+                  class="badge__dot--small badge__icon--bottom bg-primary"
+                ></span>
+                <i class="fa fa-home" aria-hidden="true"></i>
+              </button>
+
+              <button class="btn btn--icon icon--transparent">
+                <span class="badge--small badge__icon--top btn--error">7</span>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+              </button>
+            </div>
+            <h3>Gradient button</h3>
+            <div class="m-1">
+              <button class="btn btn-gradient">
+                <i class="fa fa-home" aria-hidden="true"> </i>
+                Gradient button
+              </button>
+            </div>
+          </div>
+          <div id="card" class="flex flex-col">
+            <h1>Cards</h1>
+            <h4>Simple Card</h4>
+            <div>
+              <div class="card text-center">
+                <div class="card-header">Card header</div>
+                <div class="card-body">Card Body</div>
+                <div class="card-footer text-muted">Card Footer</div>
+              </div>
+            </div>
+            <h4>Image Card</h4>
+            <div class="card w-15">
+              <img
+                class="card-img-top"
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,c_fill/dpr_2/cultgear-content/pXNg7ZykRENs8yjJBvkPNCaz"
+              />
+              <div class="card-body">
+                <h5 class="card-title h5">This is a sample card</h5>
+                <div class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </div>
+              </div>
+            </div>
+            <h4>Card with icons</h4>
+            <div class="card card-shadow">
+              <button class="btn-close btn-lg">
+                <i class="fa fa-heart-o"></i>
+              </button>
+              <img
+                class="card-img-top"
+                alt="card image"
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,c_fill/dpr_2/cultgear-content/pXNg7ZykRENs8yjJBvkPNCaz"
+              />
+              <div class="pl-1">
+                <p>Sample product with the card layout</p>
+                <p>Rs.500</p>
+              </div>
+            </div>
+            <div id="rating" class="flex flex-col">
+              <h1>Rating</h1>
+              <div class="rating">
+                <span class="badge bg-primary">
+                  4
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>Made with Love</footer>
+  </body>
+</html>
