@@ -54,14 +54,30 @@ body {
   color: var(--grey-500);
   display: flex;
   flex-direction: column;
-  background-image: url("/images/freebackground.jpg");
+  background-image: url("images/bground.jpg");
+  background-size: cover;
 }
-header {
-  height: 5rem;
+
+.home-link {
+  color: var(--grey-600);
 }
 
 main {
   flex: auto;
+}
+
+.div-doc {
+  margin-top: 20%;
+  margin-left: 4rem;
+}
+
+.link-doc {
+  background-color: var(--info-dark);
+  padding: 0.5rem;
+  color: var(--secondary);
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 footer {
