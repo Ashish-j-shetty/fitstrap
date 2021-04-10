@@ -25,7 +25,7 @@
     <header class="header">
       <button class="hamburger-btn"><i class="fa fa-bars"></i></button>
 
-      <span class="span--title">SimpleStrap</span>
+      <span class="span--title">FitStrap</span>
       <nav class="nav">
         <ul class="nav__list nav__list--primary">
           <li class="nav-item">
@@ -34,7 +34,14 @@
           <li class="nav-item">
             <a class="nav__link nav__link--active" href="docs.html">Docs</a>
           </li>
-          <li class="nav-item"><a class="nav__link">Git hub</a></li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/Ashish-j-shetty/fitstrap"
+              target="_blank"
+              class="nav__link"
+              >Github</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -43,22 +50,22 @@
       <ul class="nav__list flex-col m-1">
         <h2>Components</h2>
         <li class="list__item mt-1">
-          <a href="">Getting started</a>
+          <a class="menu__nav__link" href="#gettingStarted">Getting started</a>
         </li>
         <li class="lsit_item mt-1">
-          <a class="main__nav__link" href="#avatar">Avatar</a>
+          <a class="menu__nav__link" href="#avatar">Avatar</a>
         </li>
         <li class="lsit_item mt-1">
-          <a class="main__nav__link" href="#alerts">Alert</a>
+          <a class="menu__nav__link" href="#alerts">Alert</a>
         </li>
         <li class="lsit_item mt-1">
-          <a class="main__nav__link" href="#button">Button</a>
+          <a class="menu__nav__link" href="#button">Button</a>
         </li>
         <li class="lsit_item mt-1">
-          <a class="main__nav__link" href="#card">Card</a>
+          <a class="menu__nav__link" href="#card">Card</a>
         </li>
         <li class="lsit_item mt-1">
-          <a class="main__nav__link" href="#rating">Rating</a>
+          <a class="menu__nav__link" href="#rating">Rating</a>
         </li>
       </ul>
     </nav>
@@ -91,6 +98,38 @@
           </nav>
         </div>
         <div class="flex flex-col main">
+          <div id="gettingStarted" class="flex flex-col">
+            <h1>Getting Started</h1>
+            <p>
+              Use the following way to include Fitstrap styles and scripts into
+              your project
+            </p>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=37px&ph=27px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Clink%2520%250A%2520%2520rel%253D%2522stylesheet%2522%2520%250A%2520%2520href%253D%2522https%253A%252F%252Ffitstrap.netlify.app%252Flib%252Fstyles.css%2522%2520%250A%2520%252F%253E"
+              style="
+                width: 699px;
+                height: 220px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=seti&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=37px&ph=27px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cscript%2520%250A%2520%2520type%253D%2522text%252Fjavascript%2522%2520%250A%2520%2520src%253D%2522https%253A%252F%252Ffitstrap.netlify.app%252Fshared.js%2522%250A%253C%252Fscript%253E"
+              style="
+                width: 699px;
+                height: 220px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
           <div id="avatar" class="flex flex-col">
             <h1>Avatar</h1>
             <div class="flex">
