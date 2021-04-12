@@ -585,6 +585,11 @@ footer {
   overflow-y: scroll;
 }
 
+.title--div {
+  width: 14%;
+  text-align: center;
+}
+
 /**********************mobile Nav*************/
 
 .backdrop {
