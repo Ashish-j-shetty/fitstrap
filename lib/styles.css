@@ -455,6 +455,10 @@ footer {
   color: red;
 }
 
+.icon--red {
+  color: red;
+}
+
 .icon--transparent {
   color: var(--primary);
   box-shadow: none;
