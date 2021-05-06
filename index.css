@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Roboto:wght@100;400;700&display=swap");
-
+/* @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Roboto:wght@100;400;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 :root {
   --primary: #059669;
   --primary-dark: #064e3b;
@@ -31,10 +31,12 @@
   --pink-100: #fce7f3;
   --pink-200: #fbcfe8;
   --pink-300: #f9a8d4;
+  --font-inter: "Inter", sans-serif;
 }
 
 * {
   box-sizing: border-box;
+  font-family: var(--font-inter);
 }
 
 h1,
@@ -56,6 +58,7 @@ body {
   flex-direction: column;
   background-image: url("images/bground.jpg");
   background-size: cover;
+  font-family: var(--font-inter);
 }
 
 .home-link {
